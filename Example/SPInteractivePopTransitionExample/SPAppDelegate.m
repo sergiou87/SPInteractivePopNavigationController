@@ -8,6 +8,7 @@
 
 #import "SPAppDelegate.h"
 
+#import "SPNavigationController.h"
 #import "SPViewController.h"
 
 @implementation SPAppDelegate
@@ -18,7 +19,12 @@
     
     SPViewController *viewController = [[SPViewController alloc] init];
     
-    UINavigationController *navigationViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    UINavigationController *navigationViewController = [[SPNavigationController alloc] initWithRootViewController:viewController];
+    
+    navigationViewController.navigationBar.titleTextAttributes = @{
+                                                                   NSForegroundColorAttributeName : [UIColor redColor],
+                                                                   NSFontAttributeName : [UIFont boldSystemFontOfSize:17.f],
+                                                                   };
     
     self.window.rootViewController = navigationViewController;
     

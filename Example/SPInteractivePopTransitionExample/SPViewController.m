@@ -8,7 +8,11 @@
 
 #import "SPViewController.h"
 
+#import "UIColor+SPRandomColor.h"
+
 @interface SPViewController ()
+
+@property (nonatomic) BOOL shouldHideNavigationBar;
 
 @end
 
@@ -26,13 +30,49 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if ([[self.navigationController viewControllers] indexOfObject:self] > 0)
+	{
+        self.shouldHideNavigationBar = (arc4random_uniform(10) < 3);
+
+        UIBarButtonItem *customBarItem = [[UIBarButtonItem alloc]
+                                          initWithTitle:@"Return"
+                                          style:UIBarButtonItemStylePlain
+                                          target:self.navigationController
+                                          action:@selector(popViewControllerAnimated:)];
+        self.navigationItem.leftBarButtonItem = customBarItem;
+    }
+    
+    self.title = [NSString stringWithFormat:@"%d", arc4random_uniform(2000)];
+    
+    self.view.backgroundColor = [UIColor sp_randomColor];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+    
+    if (self.shouldHideNavigationBar)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+    if (self.shouldHideNavigationBar)
+    {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }
+}
+
+- (IBAction)pushButtonTap:(id)sender
+{
+    UIViewController *viewController = [[[self class] alloc] init];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

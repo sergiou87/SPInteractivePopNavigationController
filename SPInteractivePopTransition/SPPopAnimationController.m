@@ -135,10 +135,6 @@
 	UIView *labelContainer = [[UIView alloc] initWithFrame:label.bounds];
 	[labelContainer addSubview:label];
     
-    CGRect labelFrame = label.frame;
-    labelFrame.origin.y -= label.font.descender / 2.f; // Align the base line with the original title
-    label.frame = labelFrame;
-
 	return labelContainer;
 }
 

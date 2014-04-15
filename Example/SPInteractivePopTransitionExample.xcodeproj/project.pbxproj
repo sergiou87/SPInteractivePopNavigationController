@@ -18,6 +18,8 @@
 		4031F22218FC9E9D006D7BB5 /* SPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4031F22018FC9E9D006D7BB5 /* SPViewController.xib */; };
 		4031F22818FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4031F22518FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m */; };
 		4031F22918FC9EE8006D7BB5 /* SPPopAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4031F22718FC9EE8006D7BB5 /* SPPopAnimationController.m */; };
+		4072A63118FDEF4F00CFAD75 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072A63018FDEF4F00CFAD75 /* SPNavigationController.m */; };
+		4072A63718FDF58000CFAD75 /* UIColor+SPRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		4031F22518FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHorizontalSwipeInteractionController.m; sourceTree = "<group>"; };
 		4031F22618FC9EE8006D7BB5 /* SPPopAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPopAnimationController.h; sourceTree = "<group>"; };
 		4031F22718FC9EE8006D7BB5 /* SPPopAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPopAnimationController.m; sourceTree = "<group>"; };
+		4072A62F18FDEF4F00CFAD75 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
+		4072A63018FDEF4F00CFAD75 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
+		4072A63518FDF58000CFAD75 /* UIColor+SPRandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SPRandomColor.h"; sourceTree = "<group>"; };
+		4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SPRandomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 				4031F21E18FC9E9D006D7BB5 /* SPViewController.h */,
 				4031F21F18FC9E9D006D7BB5 /* SPViewController.m */,
 				4031F22018FC9E9D006D7BB5 /* SPViewController.xib */,
+				4072A63518FDF58000CFAD75 /* UIColor+SPRandomColor.h */,
+				4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */,
 			);
 			path = SPInteractivePopTransitionExample;
 			sourceTree = "<group>";
@@ -117,6 +125,8 @@
 				4031F22518FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m */,
 				4031F22618FC9EE8006D7BB5 /* SPPopAnimationController.h */,
 				4031F22718FC9EE8006D7BB5 /* SPPopAnimationController.m */,
+				4072A62F18FDEF4F00CFAD75 /* SPNavigationController.h */,
+				4072A63018FDEF4F00CFAD75 /* SPNavigationController.m */,
 			);
 			name = SPInteractivePopTransition;
 			path = ../SPInteractivePopTransition;
@@ -192,7 +202,9 @@
 				4031F22918FC9EE8006D7BB5 /* SPPopAnimationController.m in Sources */,
 				4031F22818FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m in Sources */,
 				4031F22118FC9E9D006D7BB5 /* SPViewController.m in Sources */,
+				4072A63118FDEF4F00CFAD75 /* SPNavigationController.m in Sources */,
 				4031F1FA18FC9D40006D7BB5 /* SPAppDelegate.m in Sources */,
+				4072A63718FDF58000CFAD75 /* UIColor+SPRandomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
