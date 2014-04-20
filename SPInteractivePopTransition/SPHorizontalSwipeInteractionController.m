@@ -20,22 +20,31 @@ static CGFloat const kSPHorizontalSwipeInteractionControllerSpeedFast = 200.;
 
 @implementation SPHorizontalSwipeInteractionController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _enabled = YES;
+    }
+    return self;
+}
+
 -(void)dealloc
 {
-    [_gesture.view removeGestureRecognizer:_gesture];
+    [self.gesture.view removeGestureRecognizer:_gesture];
 }
 
 - (void)wireToViewController:(UIViewController *)viewController
 {
-    _viewController = viewController;
+    self.viewController = viewController;
     [self prepareGestureRecognizerInView:viewController.view];
 }
 
 
 - (void)prepareGestureRecognizerInView:(UIView*)view
 {
-    _gesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-	_gesture.edges = UIRectEdgeLeft;
+    self.gesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+	self.gesture.edges = UIRectEdgeLeft;
     [view addGestureRecognizer:_gesture];
 }
 
@@ -58,10 +67,12 @@ static CGFloat const kSPHorizontalSwipeInteractionControllerSpeedFast = 200.;
             BOOL leftToRightSwipe = vel.x > 0;
             
 			// for pop operation, fire on right-to-left
-			if (leftToRightSwipe) {
+			if (leftToRightSwipe)
+            {
 				self.interactionInProgress = YES;
-				[_viewController.navigationController popViewControllerAnimated:YES];
+				[self.viewController.navigationController popViewControllerAnimated:YES];
 			}
+            
             break;
         }
         case UIGestureRecognizerStateChanged:
@@ -83,6 +94,7 @@ static CGFloat const kSPHorizontalSwipeInteractionControllerSpeedFast = 200.;
                 
                 [self updateInteractiveTransition:fraction];
             }
+            
             break;
         }
         case UIGestureRecognizerStateEnded:
@@ -90,7 +102,7 @@ static CGFloat const kSPHorizontalSwipeInteractionControllerSpeedFast = 200.;
             if (self.interactionInProgress)
 			{
                 self.interactionInProgress = NO;
-                if (!_shouldCompleteTransition || gestureRecognizer.state == UIGestureRecognizerStateCancelled)
+                if (!self.shouldCompleteTransition || gestureRecognizer.state == UIGestureRecognizerStateCancelled)
 				{
                     [self cancelInteractiveTransition];
                 }
@@ -99,6 +111,7 @@ static CGFloat const kSPHorizontalSwipeInteractionControllerSpeedFast = 200.;
                     [self finishInteractiveTransition];
                 }
             }
+            
             break;
         default:
             break;

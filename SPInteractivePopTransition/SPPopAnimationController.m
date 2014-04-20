@@ -8,6 +8,12 @@
 
 #import "SPPopAnimationController.h"
 
+@interface SPPopAnimationController ()
+
+@property (nonatomic, assign) NSTimeInterval duration;
+
+@end
+
 @implementation SPPopAnimationController
 
 - (id)init

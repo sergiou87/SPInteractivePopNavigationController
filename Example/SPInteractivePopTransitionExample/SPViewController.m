@@ -8,6 +8,7 @@
 
 #import "SPViewController.h"
 
+#import "SPInteractivePopNavigationController.h"
 #import "UIColor+SPRandomColor.h"
 
 @interface SPViewController ()
@@ -31,10 +32,12 @@
 {
     [super viewDidLoad];
     
-    if ([[self.navigationController viewControllers] indexOfObject:self] > 0)
+    if ([self.navigationController.viewControllers firstObject] == self) // Root view controller
 	{
-        self.shouldHideNavigationBar = (arc4random_uniform(10) < 3);
-
+        self.shouldHideNavigationBar = YES;
+    }
+    else
+    {
         UIBarButtonItem *customBarItem = [[UIBarButtonItem alloc]
                                           initWithTitle:@"Return"
                                           style:UIBarButtonItemStylePlain
@@ -43,7 +46,7 @@
         self.navigationItem.leftBarButtonItem = customBarItem;
     }
     
-    self.title = [NSString stringWithFormat:@"%d", arc4random_uniform(2000)];
+    self.navigationItem.title = [NSString stringWithFormat:@"%d", arc4random_uniform(2000)];
     
     self.view.backgroundColor = [UIColor sp_randomColor];
 }
@@ -70,7 +73,7 @@
 
 - (IBAction)pushButtonTap:(id)sender
 {
-    UIViewController *viewController = [[[self class] alloc] init];
+    UIViewController *viewController = [[SPViewController alloc] initWithNibName:nil bundle:nil];
     
     [self.navigationController pushViewController:viewController animated:YES];
 }

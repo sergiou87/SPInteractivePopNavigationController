@@ -17,7 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    SPViewController *viewController = [[SPViewController alloc] init];
+    SPViewController *viewController = [[SPViewController alloc] initWithNibName:nil bundle:nil];
     
     UINavigationController *navigationViewController = [[SPInteractivePopNavigationController alloc] initWithRootViewController:viewController];
     

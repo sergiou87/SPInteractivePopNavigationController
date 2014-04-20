@@ -42,7 +42,6 @@
 												 toViewController:(UIViewController *)toVC
 {
 	[self.popInteractiveTransition wireToViewController:toVC];
-	self.popInteractiveTransition.enabled = YES;
     
 	return (operation == UINavigationControllerOperationPop
 			? self.popAnimationController
