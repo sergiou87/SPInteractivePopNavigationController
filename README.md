@@ -63,7 +63,7 @@ An example of this wiring can be found in the class SPInteractivePopNavigationCo
 
 ## Contact
 
-SPInteractivePopTransition was created by Sergio Padrino: [@sergiou87](https://twitter.com/sergiou87).
+SPInteractivePopTransition was created by Sergio Padrino: [@sergiou87](https://twitter.com/sergiou87), based on [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary).
 
 ## Contributing
 
