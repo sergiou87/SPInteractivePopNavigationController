@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 Sergio Padrino. All rights reserved.
 //
 
-#import "SPNavigationController.h"
+#import "SPInteractivePopNavigationController.h"
 
 #import "SPPopAnimationController.h"
 #import "SPHorizontalSwipeInteractionController.h"
 
-@interface SPNavigationController () <UINavigationControllerDelegate>
+@interface SPInteractivePopNavigationController () <UINavigationControllerDelegate>
 
 @property (nonatomic, strong) SPPopAnimationController *popAnimationController;
 @property (nonatomic, strong) SPHorizontalSwipeInteractionController *popInteractiveTransition;
 
 @end
 
-@implementation SPNavigationController
+@implementation SPInteractivePopNavigationController
 
 - (id)initWithRootViewController:(UIViewController *)rootViewController
 {

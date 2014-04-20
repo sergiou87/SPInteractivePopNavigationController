@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPNavigationController : UINavigationController
+@interface SPInteractivePopNavigationController : UINavigationController
 
 @end

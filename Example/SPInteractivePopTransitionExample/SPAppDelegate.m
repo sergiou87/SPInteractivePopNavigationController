@@ -8,7 +8,7 @@
 
 #import "SPAppDelegate.h"
 
-#import "SPNavigationController.h"
+#import "SPInteractivePopNavigationController.h"
 #import "SPViewController.h"
 
 @implementation SPAppDelegate
@@ -19,7 +19,7 @@
     
     SPViewController *viewController = [[SPViewController alloc] init];
     
-    UINavigationController *navigationViewController = [[SPNavigationController alloc] initWithRootViewController:viewController];
+    UINavigationController *navigationViewController = [[SPInteractivePopNavigationController alloc] initWithRootViewController:viewController];
     
     navigationViewController.navigationBar.titleTextAttributes = @{
                                                                    NSForegroundColorAttributeName : [UIColor redColor],
