@@ -2,6 +2,8 @@
 
 SPInteractivePopTransition is an interactive transition for navigation controllers which tries to mimic the default behavior of iOS 7.
 
+![SPInteractivePopTransition example](https://raw.github.com/sergiou87/SPInteractivePopTransition/master/Example/InteractivePop.gif)
+
 ## Why?
 
 On iOS 7, if you want a custom back button for your navigation controller, you must forget about the nice and out-of-the-box interactive gesture to pop the current view controller. There is a workaround to fix this:
