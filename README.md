@@ -57,9 +57,13 @@ Therefore, the only way I found to preserve the original behavior while having c
 
 ## Usage of SPInteractivePopTransition
 
-In order to integrate SPInteractivePopTransition in your app you only have to wire SPPopAnimationController and SPHorizontalSwipeInteractionController with your navigation controller and view controllers.
+### The easy way
 
-An example of this wiring can be found in the class SPInteractivePopNavigationController, which can also be inherited or used directly in your app as any other UINavigationController instance.
+Just use the **SPInteractivePopNavigationController** (directly or inheriting it) as your navigation controller.
+
+### The flexible way
+
+Don't worry, it's still easy: just wire **SPPopAnimationController** and **SPHorizontalSwipeInteractionController** with your navigation controller and view controllers. An example of this wiring can be found in the class **SPInteractivePopNavigationController**.
 
 ## Contact
 
