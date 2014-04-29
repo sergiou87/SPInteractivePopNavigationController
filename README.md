@@ -1,12 +1,12 @@
-## SPInteractivePopTransition
+## SPInteractivePopNavigationController
 
-SPInteractivePopTransition is an interactive transition for navigation controllers which tries to mimic the default behavior of iOS 7.
+SPInteractivePopNavigationController is navigation controller with an interactive transition which tries to mimic the default behavior of iOS 7.
 
-![SPInteractivePopTransition example](https://raw.github.com/sergiou87/SPInteractivePopTransition/master/Example/InteractivePop.gif)
+![SPInteractivePopNavigationController example](https://raw.github.com/sergiou87/SPInteractivePopNavigationController/master/Example/InteractivePop.gif)
 
 ## Why?
 
-On iOS 7, if you want a custom back button for your navigation controller, you must forget about the nice and out-of-the-box interactive gesture to pop the current view controller. There is a workaround to fix this:
+On iOS 7, if you want a custom back button for your navigation controller, you must forget about the nice and out-of-the-box interactive gesture to pop the current view controller. There is a workaround to circumvent this:
 
 ```objective-c
 self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
@@ -27,15 +27,15 @@ Therefore, the only way I found to preserve the original behavior while having c
 - It requires that you apply some attributes to the navigation bar title text.
 - It doesn't work with custom title views (yet…).
 
-## Install SPInteractivePopTransition
+## Install SPInteractivePopNavigationController
 
 1. **Using CocoaPods**
 
-  Add SPInteractivePopTransition to your Podfile:
+  Add SPInteractivePopNavigationController to your Podfile:
 
-  ```
+  ```ruby
   platform :ios, "7.0"
-  pod 'SPInteractivePopTransition'
+  pod 'SPInteractivePopNavigationController'
   ```
 
   Run the following command:
@@ -44,32 +44,35 @@ Therefore, the only way I found to preserve the original behavior while having c
   pod install
   ```
 
-2. **Static Library**
+2. **Manually**
 
-    Clone the project or add it as a submodule. Drag *SPInteractivePopTransition.xcodeproj* to your project, add it as a target dependency and link *libSPInteractivePopTransition.a*.
-    Then, you can simply do:
+  Clone the project or add it as a submodule. Drag the whole SPInteractivePopNavigationController folder to your project.
+  
+  Then, you can simply do:
 
+    ```objective-c
+    #import "SPInteractivePopNavigationController.h"
     ```
-    #import <SPInteractivePopTransition/SPInteractivePopTransition.h>
-    ```
 
-3. **Manually**
-
-  Clone the project or add it as a submodule. Drag the whole SPInteractivePopTransition folder to your project.
-
-## Usage of SPInteractivePopTransition
+## Usage of SPInteractivePopNavigationController
 
 ### The easy way
 
-Just use the **SPInteractivePopNavigationController** (directly or inheriting it) as your navigation controller.
+Just use the **SPInteractivePopNavigationController** (directly or inheriting it) as your navigation controller:
+
+```objective-c
+SPMyViewController *myViewController = [[SPMyViewController alloc] init];
+
+SPInteractivePopNavigationController *navigationController = [[SPInteractivePopNavigationController alloc] initWithRootViewController:myViewController];
+```
 
 ### The flexible way
 
-Don't worry, it's still easy: just wire **SPPopAnimationController** and **SPHorizontalSwipeInteractionController** with your navigation controller and view controllers. An example of this wiring can be found in the class **SPInteractivePopNavigationController**.
+You don't want to use SPInteractivePopNavigationController in your code? Don't worry, it's still easy: just wire **SPPopAnimationController** and **SPHorizontalSwipeInteractionController** with your navigation controller and view controllers. An example of this wiring can be found in the class **SPInteractivePopNavigationController**.
 
 ## Contact
 
-SPInteractivePopTransition was created by Sergio Padrino: [@sergiou87](https://twitter.com/sergiou87), based on [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary).
+SPInteractivePopNavigationController was created by Sergio Padrino: [@sergiou87](https://twitter.com/sergiou87), based on [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary).
 
 ## Contributing
 
@@ -80,10 +83,10 @@ If you want to contribute to the project just follow this steps:
 3. Create your feature branch.
 4. Commit your changes, push to your fork and submit a pull request.
 
-## Apps using SPInteractivePopTransition
+## Apps using SPInteractivePopNavigationController
 
 * [Fever](https://itunes.apple.com/us/app/fever-event-discovery-app/id497702817?mt=8)
 
 ## License
 
-SPInteractivePopTransition is available under the MIT license. See the [LICENSE file](https://github.com/sergiou87/SPInteractivePopTransition/blob/master/LICENSE) for more info.
+SPInteractivePopNavigationController is available under the MIT license. See the [LICENSE file](https://github.com/sergiou87/SPInteractivePopNavigationController/blob/master/LICENSE) for more info.

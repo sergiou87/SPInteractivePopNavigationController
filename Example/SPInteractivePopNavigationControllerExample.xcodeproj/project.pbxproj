@@ -23,14 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4031F1E618FC9D40006D7BB5 /* SPInteractivePopTransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPInteractivePopTransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4031F1E618FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPInteractivePopNavigationControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4031F1E918FC9D40006D7BB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4031F1EB18FC9D40006D7BB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4031F1ED18FC9D40006D7BB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4031F1F118FC9D40006D7BB5 /* SPInteractivePopTransitionExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPInteractivePopTransitionExample-Info.plist"; sourceTree = "<group>"; };
+		4031F1F118FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPInteractivePopNavigationControllerExample-Info.plist"; sourceTree = "<group>"; };
 		4031F1F318FC9D40006D7BB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4031F1F518FC9D40006D7BB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4031F1F718FC9D40006D7BB5 /* SPInteractivePopTransitionExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPInteractivePopTransitionExample-Prefix.pch"; sourceTree = "<group>"; };
+		4031F1F718FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPInteractivePopNavigationControllerExample-Prefix.pch"; sourceTree = "<group>"; };
 		4031F1F818FC9D40006D7BB5 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		4031F1F918FC9D40006D7BB5 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
 		4031F20118FC9D40006D7BB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		4031F1DD18FC9D40006D7BB5 = {
 			isa = PBXGroup;
 			children = (
-				4031F1EF18FC9D40006D7BB5 /* SPInteractivePopTransitionExample */,
-				4031F22318FC9EE8006D7BB5 /* SPInteractivePopTransition */,
+				4031F1EF18FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample */,
+				4031F22318FC9EE8006D7BB5 /* SPInteractivePopNavigationController */,
 				4031F1E818FC9D40006D7BB5 /* Frameworks */,
 				4031F1E718FC9D40006D7BB5 /* Products */,
 			);
@@ -75,7 +75,7 @@
 		4031F1E718FC9D40006D7BB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4031F1E618FC9D40006D7BB5 /* SPInteractivePopTransitionExample.app */,
+				4031F1E618FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4031F1EF18FC9D40006D7BB5 /* SPInteractivePopTransitionExample */ = {
+		4031F1EF18FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample */ = {
 			isa = PBXGroup;
 			children = (
 				4031F1F818FC9D40006D7BB5 /* SPAppDelegate.h */,
@@ -104,21 +104,21 @@
 				4072A63518FDF58000CFAD75 /* UIColor+SPRandomColor.h */,
 				4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */,
 			);
-			path = SPInteractivePopTransitionExample;
+			path = SPInteractivePopNavigationControllerExample;
 			sourceTree = "<group>";
 		};
 		4031F1F018FC9D40006D7BB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4031F1F118FC9D40006D7BB5 /* SPInteractivePopTransitionExample-Info.plist */,
+				4031F1F118FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample-Info.plist */,
 				4031F1F218FC9D40006D7BB5 /* InfoPlist.strings */,
 				4031F1F518FC9D40006D7BB5 /* main.m */,
-				4031F1F718FC9D40006D7BB5 /* SPInteractivePopTransitionExample-Prefix.pch */,
+				4031F1F718FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4031F22318FC9EE8006D7BB5 /* SPInteractivePopTransition */ = {
+		4031F22318FC9EE8006D7BB5 /* SPInteractivePopNavigationController */ = {
 			isa = PBXGroup;
 			children = (
 				4031F22418FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.h */,
@@ -128,16 +128,16 @@
 				4072A62F18FDEF4F00CFAD75 /* SPInteractivePopNavigationController.h */,
 				4072A63018FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m */,
 			);
-			name = SPInteractivePopTransition;
-			path = ../SPInteractivePopTransition;
+			name = SPInteractivePopNavigationController;
+			path = ../SPInteractivePopNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4031F1E518FC9D40006D7BB5 /* SPInteractivePopTransitionExample */ = {
+		4031F1E518FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4031F21818FC9D40006D7BB5 /* Build configuration list for PBXNativeTarget "SPInteractivePopTransitionExample" */;
+			buildConfigurationList = 4031F21818FC9D40006D7BB5 /* Build configuration list for PBXNativeTarget "SPInteractivePopNavigationControllerExample" */;
 			buildPhases = (
 				4031F1E218FC9D40006D7BB5 /* Sources */,
 				4031F1E318FC9D40006D7BB5 /* Frameworks */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = SPInteractivePopTransitionExample;
-			productName = SPInteractivePopTransitionExample;
-			productReference = 4031F1E618FC9D40006D7BB5 /* SPInteractivePopTransitionExample.app */;
+			name = SPInteractivePopNavigationControllerExample;
+			productName = SPInteractivePopNavigationControllerExample;
+			productReference = 4031F1E618FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sergio Padrino";
 			};
-			buildConfigurationList = 4031F1E118FC9D40006D7BB5 /* Build configuration list for PBXProject "SPInteractivePopTransitionExample" */;
+			buildConfigurationList = 4031F1E118FC9D40006D7BB5 /* Build configuration list for PBXProject "SPInteractivePopNavigationControllerExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4031F1E518FC9D40006D7BB5 /* SPInteractivePopTransitionExample */,
+				4031F1E518FC9D40006D7BB5 /* SPInteractivePopNavigationControllerExample */,
 			);
 		};
 /* End PBXProject section */
@@ -298,10 +298,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPInteractivePopTransitionExample/SPInteractivePopTransitionExample-Prefix.pch";
-				INFOPLIST_FILE = "SPInteractivePopTransitionExample/SPInteractivePopTransitionExample-Info.plist";
+				GCC_PREFIX_HEADER = "SPInteractivePopNavigationControllerExample/SPInteractivePopNavigationControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "SPInteractivePopNavigationControllerExample/SPInteractivePopNavigationControllerExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SPInteractivePopNavigationControllerExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -312,10 +312,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SPInteractivePopTransitionExample/SPInteractivePopTransitionExample-Prefix.pch";
-				INFOPLIST_FILE = "SPInteractivePopTransitionExample/SPInteractivePopTransitionExample-Info.plist";
+				GCC_PREFIX_HEADER = "SPInteractivePopNavigationControllerExample/SPInteractivePopNavigationControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "SPInteractivePopNavigationControllerExample/SPInteractivePopNavigationControllerExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SPInteractivePopNavigationControllerExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -323,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4031F1E118FC9D40006D7BB5 /* Build configuration list for PBXProject "SPInteractivePopTransitionExample" */ = {
+		4031F1E118FC9D40006D7BB5 /* Build configuration list for PBXProject "SPInteractivePopNavigationControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4031F21618FC9D40006D7BB5 /* Debug */,
@@ -332,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4031F21818FC9D40006D7BB5 /* Build configuration list for PBXNativeTarget "SPInteractivePopTransitionExample" */ = {
+		4031F21818FC9D40006D7BB5 /* Build configuration list for PBXNativeTarget "SPInteractivePopNavigationControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4031F21918FC9D40006D7BB5 /* Debug */,
