@@ -1,4 +1,4 @@
-// SPViewController.h
+// SPHorizontalSwipeInteractionController.h
 //
 // The MIT License (MIT)
 //
@@ -21,6 +21,14 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@interface SPViewController : UIViewController
+#import <Foundation/Foundation.h>
+
+@interface SPVerticalSwipeInteractionController : UIPercentDrivenInteractiveTransition
+
+- (void)wireToViewController:(UIViewController *)viewController;
+
+@property (nonatomic, assign) BOOL interactionInProgress;
+@property (nonatomic, assign, getter = isEnabled) BOOL enabled;
+@property (nonatomic, assign) CGFloat topGestureZonePercentage;
 
 @end

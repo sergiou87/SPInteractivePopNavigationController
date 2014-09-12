@@ -25,6 +25,9 @@
 
 #import "SPInteractivePopNavigationController.h"
 #import "UIColor+SPRandomColor.h"
+#import "SPInteractiveDismissTransitionDelegate.h"
+#import "SPDismissableViewController.h"
+#import "SPInteractiveDismissNavigationController.h"
 
 @interface SPViewController ()
 
@@ -89,8 +92,16 @@
 - (IBAction)pushButtonTap:(id)sender
 {
     UIViewController *viewController = [[SPViewController alloc] initWithNibName:nil bundle:nil];
-    
+
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)presentButtonTap:(id)sender
+{
+    UIViewController *viewController = [[SPDismissableViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *navigationController = [[SPInteractiveDismissNavigationController alloc] initWithRootViewController:viewController];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 @end

@@ -1,4 +1,4 @@
-// SPViewController.h
+// SPDismissAnimationController.h
 //
 // The MIT License (MIT)
 //
@@ -21,6 +21,11 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@interface SPViewController : UIViewController
+
+@interface SPModalAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
+
+@property (nonatomic, getter=isDismissing) BOOL dismissing;
+@property (nonatomic, strong) UIColor *overlayColor;
+@property (nonatomic) CGFloat presentingViewScale;
 
 @end

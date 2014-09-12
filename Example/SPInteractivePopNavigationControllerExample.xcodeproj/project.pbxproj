@@ -20,6 +20,13 @@
 		4031F22918FC9EE8006D7BB5 /* SPPopAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4031F22718FC9EE8006D7BB5 /* SPPopAnimationController.m */; };
 		4072A63118FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072A63018FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m */; };
 		4072A63718FDF58000CFAD75 /* UIColor+SPRandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */; };
+		4088EC7A19C304A7002EC4C3 /* SPVerticalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC7919C304A7002EC4C3 /* SPVerticalSwipeInteractionController.m */; };
+		4088EC7D19C30552002EC4C3 /* SPModalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC7C19C30552002EC4C3 /* SPModalAnimationController.m */; };
+		4088EC8019C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC7F19C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.m */; };
+		4088EC8319C308D2002EC4C3 /* SPInteractiveDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC8219C308D2002EC4C3 /* SPInteractiveDismissViewController.m */; };
+		4088EC8719C30FE4002EC4C3 /* SPDismissableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC8519C30FE4002EC4C3 /* SPDismissableViewController.m */; };
+		4088EC8819C30FE4002EC4C3 /* SPDismissableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4088EC8619C30FE4002EC4C3 /* SPDismissableViewController.xib */; };
+		4088EC8E19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4088EC8D19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +53,19 @@
 		4072A63018FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInteractivePopNavigationController.m; sourceTree = "<group>"; };
 		4072A63518FDF58000CFAD75 /* UIColor+SPRandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SPRandomColor.h"; sourceTree = "<group>"; };
 		4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SPRandomColor.m"; sourceTree = "<group>"; };
+		4088EC7819C304A7002EC4C3 /* SPVerticalSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVerticalSwipeInteractionController.h; sourceTree = "<group>"; };
+		4088EC7919C304A7002EC4C3 /* SPVerticalSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVerticalSwipeInteractionController.m; sourceTree = "<group>"; };
+		4088EC7B19C30552002EC4C3 /* SPModalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPModalAnimationController.h; sourceTree = "<group>"; };
+		4088EC7C19C30552002EC4C3 /* SPModalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPModalAnimationController.m; sourceTree = "<group>"; };
+		4088EC7E19C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInteractiveDismissTransitionDelegate.h; sourceTree = "<group>"; };
+		4088EC7F19C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInteractiveDismissTransitionDelegate.m; sourceTree = "<group>"; };
+		4088EC8119C308D2002EC4C3 /* SPInteractiveDismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInteractiveDismissViewController.h; sourceTree = "<group>"; };
+		4088EC8219C308D2002EC4C3 /* SPInteractiveDismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInteractiveDismissViewController.m; sourceTree = "<group>"; };
+		4088EC8419C30FE4002EC4C3 /* SPDismissableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDismissableViewController.h; path = ../../SPInteractivePopNavigationController/SPDismissableViewController.h; sourceTree = "<group>"; };
+		4088EC8519C30FE4002EC4C3 /* SPDismissableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDismissableViewController.m; path = ../../SPInteractivePopNavigationController/SPDismissableViewController.m; sourceTree = "<group>"; };
+		4088EC8619C30FE4002EC4C3 /* SPDismissableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPDismissableViewController.xib; path = ../../SPInteractivePopNavigationController/SPDismissableViewController.xib; sourceTree = "<group>"; };
+		4088EC8C19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPInteractiveDismissNavigationController.h; sourceTree = "<group>"; };
+		4088EC8D19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPInteractiveDismissNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +123,9 @@
 				4031F22018FC9E9D006D7BB5 /* SPViewController.xib */,
 				4072A63518FDF58000CFAD75 /* UIColor+SPRandomColor.h */,
 				4072A63618FDF58000CFAD75 /* UIColor+SPRandomColor.m */,
+				4088EC8419C30FE4002EC4C3 /* SPDismissableViewController.h */,
+				4088EC8519C30FE4002EC4C3 /* SPDismissableViewController.m */,
+				4088EC8619C30FE4002EC4C3 /* SPDismissableViewController.xib */,
 			);
 			path = SPInteractivePopNavigationControllerExample;
 			sourceTree = "<group>";
@@ -121,12 +144,22 @@
 		4031F22318FC9EE8006D7BB5 /* SPInteractivePopNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				4088EC7819C304A7002EC4C3 /* SPVerticalSwipeInteractionController.h */,
+				4088EC7919C304A7002EC4C3 /* SPVerticalSwipeInteractionController.m */,
 				4031F22418FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.h */,
 				4031F22518FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m */,
 				4031F22618FC9EE8006D7BB5 /* SPPopAnimationController.h */,
 				4031F22718FC9EE8006D7BB5 /* SPPopAnimationController.m */,
 				4072A62F18FDEF4F00CFAD75 /* SPInteractivePopNavigationController.h */,
 				4072A63018FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m */,
+				4088EC7B19C30552002EC4C3 /* SPModalAnimationController.h */,
+				4088EC7C19C30552002EC4C3 /* SPModalAnimationController.m */,
+				4088EC7E19C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.h */,
+				4088EC7F19C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.m */,
+				4088EC8119C308D2002EC4C3 /* SPInteractiveDismissViewController.h */,
+				4088EC8219C308D2002EC4C3 /* SPInteractiveDismissViewController.m */,
+				4088EC8C19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.h */,
+				4088EC8D19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.m */,
 			);
 			name = SPInteractivePopNavigationController;
 			path = ../SPInteractivePopNavigationController;
@@ -187,6 +220,7 @@
 			files = (
 				4031F20218FC9D40006D7BB5 /* Images.xcassets in Resources */,
 				4031F22218FC9E9D006D7BB5 /* SPViewController.xib in Resources */,
+				4088EC8819C30FE4002EC4C3 /* SPDismissableViewController.xib in Resources */,
 				4031F1F418FC9D40006D7BB5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,13 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4088EC8319C308D2002EC4C3 /* SPInteractiveDismissViewController.m in Sources */,
 				4031F1F618FC9D40006D7BB5 /* main.m in Sources */,
+				4088EC8719C30FE4002EC4C3 /* SPDismissableViewController.m in Sources */,
 				4031F22918FC9EE8006D7BB5 /* SPPopAnimationController.m in Sources */,
+				4088EC8019C306DF002EC4C3 /* SPInteractiveDismissTransitionDelegate.m in Sources */,
+				4088EC7A19C304A7002EC4C3 /* SPVerticalSwipeInteractionController.m in Sources */,
 				4031F22818FC9EE8006D7BB5 /* SPHorizontalSwipeInteractionController.m in Sources */,
 				4031F22118FC9E9D006D7BB5 /* SPViewController.m in Sources */,
+				4088EC7D19C30552002EC4C3 /* SPModalAnimationController.m in Sources */,
 				4072A63118FDEF4F00CFAD75 /* SPInteractivePopNavigationController.m in Sources */,
 				4031F1FA18FC9D40006D7BB5 /* SPAppDelegate.m in Sources */,
 				4072A63718FDF58000CFAD75 /* UIColor+SPRandomColor.m in Sources */,
+				4088EC8E19C3122D002EC4C3 /* SPInteractiveDismissNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
